@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+{% load crispy_forms_tags %}
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/addcase.css' %}">
+</head>
+<body>
+<div class="header">
+    <div class="bgimg">
+        <div class="icon">
+            <a href="/"><i class="fas fa-home fa-2x"></i></a>
+        </div>
+        <div class="name">
+            <h1>Add Case</h1>
+        </div>
+        <form id="myForm" method="post" novalidate class="form-holder">
+            {% csrf_token %}
+
+            <div class="row">
+                <div class="input">
+                    {{form.name|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.no|as_crispy_field}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input">
+                    {{form.filing_date|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.next_listing_date|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.last_listing_date|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.court|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.clients|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.total_fee|as_crispy_field}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input">
+                    {{form.received_fee|as_crispy_field}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input">
+                    {{form.due_fee|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row row-space">
+                <button class="submit-btn">SUBMIT</button>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+<!--$(document).ready(function(){-->
+<!--      $("id_due_fee").click(function(){-->
+<!--      debugger;-->
+<!--        if ($("#id_total_fee") !=''){-->
+<!--            if ($("#id_received_fee")!='')-->
+<!--            {-->
+<!--            var val = $("#id_total_fee") - $("#id_received_fee");-->
+<!--            $(this).attr('placeholder', $(this).data('val'));-->
+<!--            }-->
+<!--        }-->
+<!--    });-->
+<!--});-->
+
+</script>
+</body>
+</html>

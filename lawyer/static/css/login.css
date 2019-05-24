@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+.header {
+    overflow: hidden;
+}
+.bgimg {
+	  background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 55%;
+    width: 100%;
+    overflow: hidden;
+}
+.name {
+    width: 50%;
+    float: left;
+    color: white;
+    margin-left: 5%;
+}
+.name1 {
+    width: 12%;
+    float: left;
+}
+.name1 h2 {}
+.name2 {
+	width: 50%;
+	float: right;
+	margin-right: -25%;
+	color: white;
+}
+.name2 h2 {}
+.name2 a button {
+    padding: 10px 20px 10px 20px;
+    width: 135%;
+    margin-left: -66%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.form-holder {
+    margin-top: 12%;
+    margin-bottom: 10%;
+    width: 26%;
+    margin-left: 40%;
+}
+.form-holder a button {
+    margin-bottom: 10%;
+    padding: 20px 100px 20px 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 21px;
+}
+.form-holder a button:hover {
+	transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.form-holder a  {
+}
+.submit-btn1 {/* margin-left: 3%; */padding-left: 110px !important;}
+
+
+@media screen and (max-width: 1024px) {
+        .bgimg {
+    background-position: 9%;
+    height: 1350px;
+    }
+    .name {
+    width: 50%;
+    margin-left: 0%;
+    font-size: 25px;
+    }
+    .name2 {
+    width: 50%;
+    margin-right: 0%;
+    font-size: 25px;
+    }
+    .name1 {
+    width: 48%;
+    }
+    .form-holder {
+    margin-top: 40%;
+    width: 100%;
+    margin-left: 20%;
+    }
+    .form-holder a button {
+    font-size: 70px;
+    }
+    .name2 a button {
+    padding: 15px 20px 15px 20px;
+    font-size: 30PX;
+    }
+}
+
+@media screen and (max-width: 768px) {
+       .bgimg {
+    background-position: 9%;
+    height: 1007px;
+    }
+    .name {
+    width: 50%;
+    margin-left: 0%;
+    font-size: 25px;
+    }
+    .name2 {
+    width: 50%;
+    margin-right: 0%;
+    font-size: 25px;
+    }
+    .name1 {
+    width: 48%;
+    }
+    .form-holder {
+    margin-top: 40%;
+    width: 100%;
+    margin-left: 20%;
+    }
+    .form-holder a button {
+    font-size: 50px;
+    }
+    .name2 a button {
+    padding: 15px 20px 15px 20px;
+    font-size: 30PX;
+    }
+}
+
+@media screen and (max-width: 414px) {
+       .bgimg {
+    background-position: 9%;
+    height: 713px;
+    }
+    .name {
+    width: 50%;
+    margin-left: 0%;
+    font-size: 13px;
+    }
+    .name2 {
+    width: 50%;
+    margin-right: 0%;
+    font-size: 12px;
+    }
+    .name1 {
+    width: 48%;
+    }
+    .form-holder {
+    margin-top: 40%;
+    margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+     .bgimg {
+    background-position: 9%;
+    height: 713px;
+    }
+    .name {
+    width: 50%;
+    margin-left: 0%;
+    font-size: 13px;
+    }
+    .name2 {
+    width: 50%;
+    margin-right: 0%;
+    font-size: 12px;
+    }
+    .name1 {
+    width: 48%;
+    }
+    .form-holder {
+    margin-top: 45%;
+    margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bgimg {
+    height: 650px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bgimg {
+    background-position: 9%;
+    height: 622px;
+    }
+    .name {
+    width: 50%;
+    margin-left: 0%;
+    font-size: 13px;
+    }
+    .name2 {
+    width: 50%;
+    margin-right: 0%;
+    font-size: 12px;
+    }
+    .name1 {
+    width: 48%;
+    }
+    .form-holder {
+    margin-top: 40%;
+    margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+     .bgimg {
+    background-position: 9%;
+    height: 556px;
+    }
+    .name2 a button {
+    width: 147%;
+    }
+    .name {
+    width: 50%;
+    margin-left: 0%;
+    font-size: 11px;
+    }
+    .name2 {
+    width: 50%;
+    margin-right: 0%;
+    font-size: 11px;
+    }
+    .name1 {
+    width: 48%;
+    }
+    .form-holder {
+    margin-left: 7%;
+    }
+}
+
+.name1 {
+    width: 32%;
+    float: left;
+    margin-right: -95px;
+}
+
+
+
+
+
+
+.icon {
+color: white;
+width: 3%;
+margin-left: 44%;
+margin-top: 1%;
+}
+.icon i {
+margin-bottom: -135px;
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

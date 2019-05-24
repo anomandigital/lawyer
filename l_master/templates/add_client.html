@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+{% load crispy_forms_tags %}
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/add.css' %}">
+</head>
+<body>
+<div class="header">
+    <div class="bgimg">
+        <div class="icon">
+            <a href="/"><i class="fas fa-home fa-2x"></i></a>
+        </div>
+        <div class="name">
+            <h1>Add Client</h1>
+        </div>
+        <form id="myForm" method="post" novalidate class="form-holder">
+            {% csrf_token %}
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.first_name|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.last_name|as_crispy_field}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input">
+                    {{form.phone|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.about|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.birth_date|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.country|as_crispy_field}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input">
+                    {{form.state|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input">
+                    {{form.city|as_crispy_field}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input">
+                    {{form.address|as_crispy_field}}
+                </div>
+            </div>
+
+
+            <div class="row row-space">
+                <button class="submit-btn">SUBMIT</button>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

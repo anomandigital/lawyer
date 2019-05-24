@@ -1,0 +1,127 @@
+.header {}
+.bgimg {
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 55%;
+	width: 100%;
+	overflow: hidden;
+	height: 1030px;
+}
+.name {
+    text-align: center;
+    color: white;
+    /* padding-bottom: 3%; */
+    padding-top: 2%;
+    font-size: 25px;
+}
+.name h1 {}
+.form-holder {
+    width: 15%;
+    margin-left: 41%;
+}
+.form-holder input {
+    margin-bottom: 7%;
+    padding: 25px 90px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+.submit-btn {
+    padding: 20px 120px 20px 100px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 20px;
+}
+.submit-btn:hover {
+	transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1024px) {
+    .form-holder {
+    margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bgimg {
+    height: 1236px;
+    }
+    .form-holder {
+    margin-left: 31%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .bgimg {
+    height: 891px;
+    }
+    .form-holder {
+    margin-left: 14%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .bgimg {
+    height: 875px;
+    }
+    .form-holder {
+    margin-bottom: 13%;
+    margin-left: 13%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bgimg {
+    height: 975px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .bgimg {
+    background-position: 0 !important;
+    height: 855px !important;
+    }
+    .form-holder {
+    margin-left: 9%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .name {
+    font-size: 20px;
+    }
+    .form-holder input {
+    margin-bottom: 13%;
+    font-size: 12px;
+    }
+    .submit-btn {
+    padding: 20px 100px 20px 80px;
+    font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+.select{
+margin-bottom: 7%;
+    padding: 25px 157px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    background-color: white;
+    color:#8f7675;
+}
+
+
+
+
+

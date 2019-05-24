@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    {% block title %}
+    Log in
+    {% endblock %}
+  </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap/css/bootstrap.min.css' %}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/font-awesome/css/font-awesome.min.css' %}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/Ionicons/css/ionicons.min.css' %}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/AdminLTE.min.css' %}">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/iCheck/square/blue.css' %}">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/site_account_base.css' %}">
+
+  <style>
+    .login-logo{
+      border-bottom: none;
+      margin-bottom: 0px;
+      background: #fff;
+    }
+    .logo{
+        position: relative;
+        margin-bottom: 20px;
+        height: 60px;
+    }
+
+    .login-page, .register-page {
+      background:url(/static/assets/images/acconts_bg.jpg);
+      background-size:cover;
+			background-repeat: no-repeat;
+
+    }
+.login_btn {
+			width: 100%;
+			background: #440A87 ;
+			color: white;
+             margin-top:20px;
+
+		}
+		.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+
+		.login_btn:hover{
+		color:white;
+		}
+.btn{
+font-size:20px;
+
+}
+.login-box-body{
+
+padding:40px;
+}
+.login-logo{
+
+color:#461195;
+margin-top:10px;
+}
+.login-box{
+ box-shadow: 14px 15px 40px 24px #2a104e;
+     min-width: 450px;
+    margin: 0 auto;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    z-index: 111;
+
+}
+.form-control-feedback{
+left:0;
+}
+.has-feedback .form-control {
+    padding-left: 42.5px;
+}
+.login-box-body .form-control-feedback, .register-box-body .form-control-feedback{
+ color: white;
+ background-color:#440A87;
+}
+.login-logo{
+margin-top:0px;
+}
+
+.icheck input:hover{
+ background-color:#440A87;
+}
+footer{
+
+position:relative;
+
+}
+.frm{
+    min-height: 96vh;
+}
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+}
+
+.foter{
+height:50px;    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+background: #440a87;
+background: -moz-linear-gradient(left, #440a87 0%, #880fc4 100%);
+background: -webkit-linear-gradient(left, #440a87 0%,#880fc4 100%);
+background: linear-gradient(to right, #440a87 0%,#880fc4 100%); /
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#440a87', endColorstr='#880fc4',GradientType=1 );
+}
+.logo-text{
+color;white;
+font-size:20px;
+}
+
+p.logo-text{
+color:white;
+}
+.ul-text{
+
+color: #fff;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 20px;
+}
+.logo-text a{
+    color:#FFFFFF;
+}
+.side-logo{
+margin-left:20px;
+}
+  </style>
+</head>
+<body class="hold-transition login-page">
+
+
+<div class="frm">
+<div class="side-logo">
+  <img src="/static/assets/images/logo2.png">
+  </div>
+<div class="login-box">
+
+  <div class="login-logo">
+
+    <b>{% block content_header %} {% endblock%}</b>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+
+
+</div>
+  </div>
+
+<div class="container-fluid foter">
+  <div class="row">
+<div class="col-md-6" style="color:#fff; padding-top:5px;">
+Powered By:
+  <p class="logo-text"><a href="//school1.afs.do.viewyoursite.net:8000" target="_blank">acadmo.</a></p></div>
+
+<div class="col-md-6 ">
+<ul class="list-inline ul-text">
+<li><h4>Support &amp; Services:</h4></li><li>
+</li><li><i class="fa fa-phone-square" aria-hidden="true"></i>  +91-7985284668</li><li>
+</li><li><i class="fa fa-envelope-open" aria-hidden="true"></i>  info@maanyait.com</li><li>
+</li></ul>
+</div>
+    </div>
+</div>
+
+<!-- /.login-box -->
+
+<!-- jQuery 3 -->
+<script src="{% static request.THEME_NAME|add:'js/jquery.min.js' %}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="{% static request.THEME_NAME|add:'js/bootstrap/bootstrap.min.js' %}"></script>
+<!-- iCheck -->
+<script src="{% static request.THEME_NAME|add:'js/icheck.min.js' %}"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' /* optional */
+    });
+  });
+</script>
+
+</body>
+</html>

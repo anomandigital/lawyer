@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<div class="header">
+    <div class="bgimg">
+
+        <div class="name">
+            <div class="name1">
+                <h2>Name:</h2>
+                <h2>Reg No.:</h2>
+            </div>
+            <div class="name1">
+                <h2>{{request.user.get_full_name|title}}</h2>
+                <h2>{{request.user.id}}</h2>
+            </div>
+        </div>
+
+        <div class="name2">
+            <div class="name1">
+                <h2>Date:</h2>
+            </div>
+            <div class="name1">
+                <h2>{{date|date:'d-m-Y'}}</h2>
+                <a class="button" href="#">
+                    <button class="submit-btn">Edit Profile</button>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="accounts/logout/">
+                    <i class="fas fa-power-off fa-2x"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="form-holder">
+
+            <a class="button" href="{% url 'view_client' %}">
+                <button class="submit-btn">View Clients</button>
+            </a>
+            <a class="button" href="{% url 'add_client' %}">
+                <button class="submit-btn">Add Clients</button>
+            </a>
+            <a class="button" href="{% url 'add_case' %}">
+                <button class="submit-btn1">Add Case</button>
+            </a>
+
+            <a class="button" href="{% url 'view_case' %}">
+                <button class="submit-btn1">View Case</button>
+            </a>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

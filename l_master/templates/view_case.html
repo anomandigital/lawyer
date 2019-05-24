@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>View Case</title>
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/view.css' %}">
+</head>
+<body>
+<div class="header">
+    <div class="bgimg bgimg1">
+        <div class="icon">
+            <a href="/"><i class="fas fa-home fa-2x"></i></a>
+        </div>
+        <div class="name">
+            <h2>View Case</h2>
+        </div>
+        {% for obj in cases %}
+        <div class="box">
+            <div class="name2">
+                <h3>NAME</h3>
+                <h3>CASE NO.</h3>
+            </div>
+            <div class="name2">
+                <h3>{{obj.name}}</h3>
+                <h3>{{obj.no}}</h3>
+            </div>
+
+            <div class="name2 button">
+
+                <button class="bt1">EDIT</button>
+
+                <a href="{% url 'delete_case' obj.pk %}">
+                    <button class="bt2">DELETE</button>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
